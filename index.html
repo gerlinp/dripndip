@@ -9,28 +9,26 @@
     <title>My Project</title>
   </head>
 
-  <body data-bs-spy="scroll" data-bs-target="#nav" > 
+  <body id="body" data-bs-spy="scroll" data-bs-target="#nav" data-offset="400"> 
 
     <nav id="nav" class="navbar navbar-expand-lg fixed-top p-2 mx-0 nav mb-5 navbar-light">
       <div class="container">
-        <a class="navbar-brand" href="#nav"><span class="logo great-vibes">Drip N Dip</span> </a>
+        <a class="navbar-brand" href="#home"><span class="logo great-vibes">Drip N Dip</span> </a>
         <div class="nav-button">
-        <button id="nav-btn" class="navbar-toggler btn-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <?xml version="1.0" encoding="utf-8"?><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30" height="30" viewBox="0 0 122.879 103.609" enable-background="new 0 0 122.879 103.609" xml:space="preserve"><g><path fill-rule="evenodd" clip-rule="evenodd" d="M10.368,0h102.144c5.703,0,10.367,4.665,10.367,10.367v0 c0,5.702-4.664,10.368-10.367,10.368H10.368C4.666,20.735,0,16.07,0,10.368v0C0,4.665,4.666,0,10.368,0L10.368,0z M10.368,82.875 h102.144c5.703,0,10.367,4.665,10.367,10.367l0,0c0,5.702-4.664,10.367-10.367,10.367H10.368C4.666,103.609,0,98.944,0,93.242l0,0 C0,87.54,4.666,82.875,10.368,82.875L10.368,82.875z M10.368,41.438h102.144c5.703,0,10.367,4.665,10.367,10.367l0,0 c0,5.702-4.664,10.368-10.367,10.368H10.368C4.666,62.173,0,57.507,0,51.805l0,0C0,46.103,4.666,41.438,10.368,41.438 L10.368,41.438z"/></g></svg>
-        </button>
-
-
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
       </div>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" href="#home"  data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about" data-target="#about">About</a>
+              <a class="nav-link" href="#about" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Menu</a>
+              <a class="nav-link" href="#menu">Menu</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#gallery">Gallery</a>
@@ -51,14 +49,30 @@
       </div>
     </div>
 
-    <section id="about" class="container content text-center text-white">
-      <h1 class="title great-vibes">What we offer</h1>
-      <p class=" info text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum in quasi laudantium error, hic delectus ullam animi pariatur optio corporis ab expedita maiores alias ducimus, quod voluptates, odio officiis dolor?
-      </p>
+
+    <section id="about" class="container content text-center text-white d-md-flex">
+      <div class="col text-center fs-4 m-auto container">
+        <h1 class="title great-vibes">What we offer</h1>
+        <p class=" info text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum in quasi laudantium error, hic delectus ullam animi pariatur optio corporis ab expedita maiores alias ducimus, quod voluptates, odio officiis dolor?
+        </p>
+      </div>
+      <div class="rounded py-auto m-auto col">
+        <img src="images/chocostraw.jpg" class="img-fluid" alt="">
+      </div>
+    </section>
+
+
+    <section id="menu" class="container">
+      <h1 class="text-center title great-vibes">Latest order</h1>
+      <div class="hide">
+        <div class="elfsight-app-3c5d9266-988c-4548-9e35-f6439ee44b0a"></div>
+      </div>
     </section>
 
     <section id="gallery" class="container content text-center text-whiter">
       <h1 class="title">Gallery</h1>
+
+<div class="elfsight-app-3e2f269c-e541-491d-9e19-b2cc6e7ffc0c"></div>
     </section>
 
     <footer>
@@ -85,6 +99,7 @@
     </div>
     </footer>
 
+    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous" defer></script>
     <script src="script.js"></script>
   </body>

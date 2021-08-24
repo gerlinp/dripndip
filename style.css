@@ -159,19 +159,26 @@ body {
 
 .title{
   font-family: 'Playfair Display', serif;
-  font-size: 40px;
+  font-size: 3rem;
   color: #C4A484;
 }
 
 .info {
   font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.5rem;
 }
 
 #about {
-  padding: 100px 0;
+  padding: 100px 50px;
 }
-section {
-  max-width: 80%;
 
-  border-radius: 10px;
+#menu {
+  max-width: 600px;
+  padding: 100px 50px;
+  
+}
+
+
+#about img {
+  border-radius: 40px;
 }
