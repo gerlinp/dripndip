@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css" />
     <title>My Project</title>
   </head>
 
-  <body id="body" data-bs-spy="scroll" data-bs-target="#nav" data-offset="400"> 
-
+  <body id="body" data-bs-spy="scroll" data-bs-target="#nav"> 
+    <div id="home"></div>
     <nav id="nav" class="navbar navbar-expand-lg fixed-top p-2 mx-0 nav mb-5 navbar-light">
       <div class="container">
         <a class="navbar-brand" href="#home"><span class="logo great-vibes">Drip N Dip</span> </a>
@@ -21,11 +21,12 @@
       </div>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul class="navbar-nav">
+
             <li class="nav-item">
-              <a class="nav-link" href="#home"  data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Home</a>
+              <a class="nav-link" href="#home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">About</a>
+              <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#menu">Menu</a>
@@ -36,10 +37,11 @@
             <li class="nav-item">
               <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Contact</a>
             </li>
+            
           </ul>
         </div>
       </div>
-    </nav><!-- /nav -->
+    </nav>
 
 
     <div class="hero mt-5 pt-5">
@@ -50,12 +52,14 @@
     </div>
 
 
-    <section id="about" class="container content text-center text-white d-md-flex">
+    <section id="about" class="container content text-center text-white d-md-flex justify-content-end">
+      
       <div class="col text-center fs-4 m-auto container">
         <h1 class="title great-vibes">What we offer</h1>
         <p class=" info text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum in quasi laudantium error, hic delectus ullam animi pariatur optio corporis ab expedita maiores alias ducimus, quod voluptates, odio officiis dolor?
         </p>
       </div>
+
       <div class="rounded py-auto m-auto col">
         <img src="images/chocostraw.jpg" class="img-fluid" alt="">
       </div>
@@ -63,25 +67,24 @@
 
 
     <section id="menu" class="container">
-      <h1 class="text-center title great-vibes">Latest order</h1>
-      <div class="hide">
+   
+      <div class="hide rounded py-auto m-auto col mb-5" >
+        <h1 class="text-center title great-vibes">Latest order</h1>   
         <div class="elfsight-app-3c5d9266-988c-4548-9e35-f6439ee44b0a"></div>
+      </div>
+
+      <div id="order" class="col text-center fs-4 m-auto container ">
+        <h1 class="text-center title great-vibes ">Order</h1>  
+        <h3>Accepted paymen cashapp or venmo
+          Available within 24-48 hrs of paymen
+        </h3>
+        <button>Place Order Now</button>  
       </div>
     </section>
 
     <section id="gallery" class="container content text-center text-whiter">
       <h1 class="title">Gallery</h1>
-
-      <div id="gallery">
-        <img src="images/5d0f682906c059fb6e3cf984fdf7be83.jpg" alt="">
-        <img src="" alt="">
-
-        <a href="#">
-            <img src="" alt="">
-        </a>
-
-    </div>
-
+      <div id="thumbs" class="thumbs"></div>
     </section>
 
     <footer>
@@ -107,8 +110,12 @@
         </div>
     </div>
     </footer>
+
+
+
+
+
     <script src="https://apps.elfsight.com/p/platform.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/cube-gallery-js/src/index.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous" defer></script>
     <script src="script.js"></script>
   </body>
