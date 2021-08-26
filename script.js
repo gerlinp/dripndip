@@ -2,7 +2,7 @@ const nav = document.querySelector('.nav')
 const body = document.querySelector('#body')
 const navLinks = document.querySelectorAll('.nav-item')
 
-
+//testing cube gallery
 
 
 window.addEventListener('scroll', fixNav)
