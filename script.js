@@ -3,6 +3,9 @@ const body = document.querySelector('#body')
 const navLinks = document.querySelectorAll('.nav-item')
 
 //testing cube gallery
+new CubeGallery('gallery', {
+    minHeight: 150
+})
 
 
 window.addEventListener('scroll', fixNav)
