@@ -5,8 +5,15 @@
 /*-- Body Reset --*/
 body {
   overflow-x: hidden;
-  font-family: 'Quicksand', sans-serif;
-  color: #616971;
+  font-family: 'PlayFair Display', sans-serif;
+  font-size: 2rem;
+  color: white;
+  background:#7aaec4
+}
+
+p {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.2rem;
 }
 
 /*============= TOP BAR HEADER =============*/
@@ -26,7 +33,7 @@ body {
 /*============= NAVIGATION =============*/
 
 .navbar {
-  font-size: 1.15rem;
+  font-size: 1.3rem;
   font-weight: 600;
   letter-spacing: .1rem;
   box-shadow: 0 .5rem .5rem rgba(0,0,0,.1);
@@ -102,6 +109,23 @@ body {
   margin: -20px 0 20px;
 }
 
+#about h1 {
+  font-size: 5rem;
+}
+
+#about .lead {
+  font-size: 2.5rem ;
+}
+
+#about img {
+  width: 100%!important;
+  height:229px!important;
+  object-fit: cover;
+}
+
+#about h4 {
+  font-size: 2.1rem;
+} 
 
 .bg-custom div::before {
   content: '';
@@ -121,11 +145,6 @@ body {
   font-size:2.2rem
 }
 
-/*===== FIXED BACKGROUND IMG =====*/
-
-.fixed-background {
-  overflow: hidden; /*-- Correction for iOS --*/
-}
 
 .btn-lg  {
   border-radius: .1;
@@ -154,6 +173,34 @@ body {
   background: #68a0d2!important;
   border: .1rem solid #68a0d2!important;
 }
+
+/*===== FIXED BACKGROUND IMG =====*/
+
+.fixed {
+  background-image: url('../images/cartoonstraw.jpg');
+  position: fixed;
+  background-size: 500px!important;
+  width: 300px;
+  height: 300px;
+  border: 2px solid;
+  color: pink;
+}
+
+.fixed-background {
+  padding: 10rem 0;
+  overflow: hidden; /*-- Correction for iOS --*/
+}
+
+.fixed-background .col-12 {
+  background: #7aaec4;
+  width: 50%
+}
+
+.fixed-background .col-12 button {
+  background: #f4a460;
+}
+
+
 /*-- Emoji Navbar --*/
 
 
